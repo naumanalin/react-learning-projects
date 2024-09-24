@@ -1,0 +1,245 @@
+/* Resets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1180px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+/* Header Styles */
+header {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-left h2 {
+  margin-right: 20px;
+}
+
+.nav-left a {
+  margin-right: 20px;
+  color: #333;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-left a sup {
+  font-size: 0.8rem;
+}
+
+.search-bar {
+  width: 250px;
+  outline: none;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+/* Home Page Styles */
+.user-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-p {
+  font-size: 1rem;
+  color: #666;
+  margin: 5px 0;
+}
+
+.user-id {
+  font-size: 0.9rem;
+  color: #888;
+  display: block;
+  margin-top: 10px;
+}
+
+.btn-group {
+  margin-top: 15px;
+}
+
+.btn-edit {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-edit:hover {
+  background-color: #0056b3;
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+    width: 88px;
+    
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card-item {
+    padding: 15px;
+  }
+
+  .user-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+
+/* Create User Form Styles */
+form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+form h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-container {
+  margin-bottom: 20px;
+}
+
+.form-container label {
+  font-size: 1rem;
+  color: #555;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"],
+.form-container input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #fff;
+}
+
+input[type="radio"] {
+  width: 18px;
+  height: 20px;
+  margin: 0 7px;
+}
+
+label[for="male"],
+label[for="female"],
+label[for="all"] {
+  margin-right: 15px;
+  font-size: 1.5rem;
+  color: #555;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  z-index: 2345;
+}

@@ -1,8 +1,8 @@
 import style from './Display.module.css';
 
-function Display(){
+function Display({calVal}){
     return(
-        <input className={style.display} type="text" />
+        <input className={style.display} type="text" value={calVal} readOnly />
     );
 }
 

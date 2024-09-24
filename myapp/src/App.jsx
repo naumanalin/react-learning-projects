@@ -7,6 +7,7 @@ import Title from './components/Title';
 import Registration from './components/Registration';
 import Users from './components/Users';
 
+
 // Define your routes
 const router = createBrowserRouter([
   {
