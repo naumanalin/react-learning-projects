@@ -74,9 +74,14 @@ const userSlice = createSlice({
     initialState: {
         isLoading: false,
         data: [],
-        isError: false
+        isError: false,
+        searchData: []
     },
-    reducers: {},
+    reducers: {
+        searchData(state, action){
+            state.searchData = action.payload;
+        }
+    },
     extraReducers: (builder) => {
         // fetch all users
         builder.addCase(fetchUsers.pending, (state) => {
@@ -144,3 +149,4 @@ const userSlice = createSlice({
 });
 
 export default userSlice.reducer;
+export const {searchData} = userSlice.actions
