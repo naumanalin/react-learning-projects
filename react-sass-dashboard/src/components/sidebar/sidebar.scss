@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+@import "../../styles/responsive.scss";
+
+.sidebar-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+
+  .item {
+    margin-bottom: 20px;
+
+    .title {
+      font-size: 14px;
+      font-weight: 600;
+      color: $soft-color;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      letter-spacing: 0.5px;
+
+      @include lg{
+        display: none;
+      }
+    }
+
+    .item-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 15px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $soft-bg;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+        object-fit: cover;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+
+      .link-title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 1.2;
+
+        @include lg{
+          display: none;
+        }
+      }
+    }
+  }
+}
