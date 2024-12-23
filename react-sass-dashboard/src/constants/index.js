@@ -11,7 +11,7 @@ export const sideBarMenu = [
       },
       {
         title: 'Profile',
-        url: '/users/1',
+        url: '/',
         icon: 'user.svg',
       },
     ],
